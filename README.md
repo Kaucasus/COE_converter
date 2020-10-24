@@ -20,7 +20,7 @@ Run the script in your terminal of choice, it should be cross-platform. Only tes
 - gray is a 8-bit grayscale image
 - bit is a 8-bit value which is either full black or full white
 
-Alpha
+Alpha is an 8 bit value that defines the transparency, standard it's on.
 
 ```bash
 usage: coeconverter.py [-h] [-a] [-f] [-o OUTPUT] image {HDMI,VGA,gray,bit}
