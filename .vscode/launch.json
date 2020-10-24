@@ -8,8 +8,9 @@
             "name": "Python: run coeconvertor",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/coeconvertor.py",
-            "args": ["${workspaceFolder}/tests/${input:selectImage}",],
+            "program": "${workspaceFolder}\\coeconverter.py",
+            "args": ["${workspaceFolder}\\tests\\${input:selectImage}"
+                ,"${input:selectMode}","-f","-a"],
             "console": "integratedTerminal"
             
         }
@@ -24,8 +25,15 @@
             "id": "selectImage",
             "type": "pickString",
             "description": "Select image",
-            "options": ["test.png","sprite.png","warlockSpriteSheet.png"],
+            "options": ["test.png"],
             "default": "test.png"
-        }
+        },
+        {
+            "id": "selectMode",
+            "type": "pickString",
+            "description": "Select mode",
+            "options": ["HDMI","VGA","gray","bit"],
+            "default": "HDMI"
+        }       
     ]
 }
